@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scripts/camera/camera_control.gd" type="Script" id=1]
+
+[node name="FreeCamera" type="Camera"]
+transform = Transform( 0.605475, 0, -0.795865, 0, 1, 0, 0.795865, 0, 0.605475, 0, 3.634, 0 )
+current = true
+fov = 90.0
+far = 4000.0
+script = ExtResource( 1 )
+max_speed = Vector3( 300, 300, 300 )

@@ -1,0 +1,49 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://objects/first_person_camera.tscn" type="PackedScene" id=1]
+[ext_resource path="res://objects/vehicle.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scripts/player Vehicle/player_vehicle.gd" type="Script" id=3]
+[ext_resource path="res://objects/car.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scripts/player Vehicle/player_front_area.gd" type="Script" id=5]
+[ext_resource path="res://scripts/player Vehicle/accident_detection.gd" type="Script" id=6]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 20, 2, 14 )
+
+[sub_resource type="BoxShape" id=2]
+extents = Vector3( 1, 1, 1.5 )
+
+[node name="PlayerVehicle" type="Node"]
+script = ExtResource( 3 )
+
+[node name="Vehicle" parent="." instance=ExtResource( 2 )]
+
+[node name="CameraFirstPerson" parent="Vehicle" instance=ExtResource( 1 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.190339, 1.49494, 0.0476935 )
+visible = false
+current = true
+max_speed = Vector3( 8, 8, 8 )
+
+[node name="Car" parent="Vehicle" instance=ExtResource( 4 )]
+
+[node name="EnemyDetection" type="Area" parent="Vehicle"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 27.6553 )
+collision_layer = 0
+collision_mask = 32
+script = ExtResource( 5 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Vehicle/EnemyDetection"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 15.6852 )
+shape = SubResource( 1 )
+
+[node name="EnemyTarget" type="Spatial" parent="Vehicle"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 51.9828 )
+
+[node name="AccidentDetection" type="Area" parent="Vehicle"]
+collision_layer = 128
+collision_mask = 64
+script = ExtResource( 6 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Vehicle/AccidentDetection"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.08461, -0.0368 )
+shape = SubResource( 2 )

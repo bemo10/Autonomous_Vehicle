@@ -1,0 +1,20 @@
+[gd_resource type="Environment" load_steps=3 format=2]
+
+[ext_resource path="res://kloppenheim_01_4k.hdr" type="Texture" id=1]
+
+[sub_resource type="PanoramaSky" id=1]
+panorama = ExtResource( 1 )
+
+[resource]
+background_mode = 2
+background_sky = SubResource( 1 )
+background_color = Color( 1, 1, 1, 1 )
+ambient_light_color = Color( 0.439216, 0.439216, 0.439216, 1 )
+ambient_light_sky_contribution = 0.8
+fog_color = Color( 0.356863, 0.380392, 0.396078, 1 )
+fog_sun_color = Color( 0.54902, 0.54902, 0.54902, 1 )
+fog_depth_end = 1000.0
+tonemap_mode = 2
+tonemap_exposure = 0.85
+tonemap_white = 16.0
+dof_blur_far_distance = 1000.0
