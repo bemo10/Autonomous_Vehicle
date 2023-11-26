@@ -29,14 +29,15 @@ T: Reset Interaction data
 ## How to start a simulation test:
 
 When you choose a destination on the map, the simulation test starts automatically.  
-The vehicle will drive autonomously to the selected destination and throught the journey the user will encounter variouse hazards that they have to avoid by taking control of the vehicle.  
+The vehicle will drive autonomously to the selected destination and throught the journey the user will encounter different obstacles that they have to avoid by taking control of the vehicle.  
 Avoiding these potential accidents can be done by hitting the breaks or steering away from them.
-The simulation will keep of the reaction time of the user by taking into account how long it took the user to manually take control of the vehicle from the moment the hazard appeared infront of them.  
+The simulation will keep track of the reaction time of the user by taking into account how long it took the user to manually take control of the vehicle from the moment the hazard appeared in front of them.  
 When the vehicle reaches the selected destination you can open the Simulatio Interface with the "ESC" key in order to see the results (use the mouse wheel to scroll up and down to see all the results in the list).  
+You can also reset the simulation results by pressing "T" on your keyboard.  
 
 
 ## Using a different map for the simulation
-The software uses OpenStreetMap files in order to generate the environment automatically. The map can be changed following these instructions:
+The software uses OpenStreetMap files in order to generate the 3D environment automatically. The map can be changed following these instructions:
 
 1. Choose a location in OpenStreetMap website  
 2. Click on export then download the map (it should have the ".osm" file extension).  
