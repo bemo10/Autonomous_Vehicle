@@ -4,7 +4,7 @@ extends Node
 var npcVehicleRes = preload('res://objects/npc_vehicle.tscn')
 var pathfindingObject
 var chunkSystem
-var nVehicles = 3000	#2000
+var nVehicles = 3000	#3000
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

@@ -25,9 +25,6 @@ func _process(delta):
 	
 	
 
-
-
-
 #func initialize():
 #	# Get all entities
 #	var entities = get_children()

@@ -1,0 +1,18 @@
+
+• Art assets:
+
+Low Poly Character Pack
+Link: https://adamhajdu.itch.io/free-low-poly-character
+artstation: https://www.artstation.com/adamhajdu
+itch.io: https://adamzhajdu.itch.io/
+
+Low Poly Small car
+by scailman is licensed under CC BY 4.0. 
+https://sketchfab.com/3d-models/low-poly-small-car-ebe7c5e98a7448b5abb2eaf0cb22b766
+
+
+• Code:
+
+Camera script
+Copyright (c) 2018-2020 Jaccomo Lorenz (Maujoe)
+https://github.com/Maujoe/godot-camera-control
